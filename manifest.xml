@@ -1,0 +1,20 @@
+<package>
+  <description brief="amber_footstep_qp">
+
+     amber_footstep_qp
+
+  </description>
+  <author>eacousineau</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/amber_ros</url>
+
+  <depend package="amber_core"/>
+  <depend package="amber_matlab"/>
+
+  <export>
+    <cpp cflags="-I${prefix}/include" lflags="-L${prefix}/build -lamber_footstep_qp"/>
+  </export>
+</package>
+
+
