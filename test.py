@@ -4,12 +4,12 @@ import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), 'build'))
 
 import ecto
-import ecto_test
+import ecto_simple
 
 print '[ Doc ]'
-print ecto_test.Test.__doc__
+print ecto_simple.Test.__doc__
 
-test = ecto_test.Test()
+test = ecto_simple.Test()
 
 test.inputs.name = 'Biscuit'
 # Tendril for vector<int> is not passed by reference. How to remedy?

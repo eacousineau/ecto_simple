@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(ecto_test)
+project(ecto_simple)
 
 #defines include directories, libraries a few macros
 #that simplify creating ecto module targets.
@@ -11,6 +11,6 @@ list(APPEND CMAKE_CXX_FLAGS "-std=c++0x")
 #make all libraries appear in the build/lib directory
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
-ectomodule(ecto_test DESTINATION ${CMAKE_BINARY_DIR} INSTALL
-    src/cell.cpp
+ectomodule(ecto_simple DESTINATION ${CMAKE_BINARY_DIR} INSTALL
+    src/Test.cpp
 )

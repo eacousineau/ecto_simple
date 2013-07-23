@@ -1,7 +1,7 @@
 #include <ecto/ecto.hpp>
 #include <iostream>
 
-namespace ecto_test
+namespace ecto_simple
 {
 
 using ecto::tendrils;
@@ -34,7 +34,7 @@ struct Test
 
 }
 
-ECTO_DEFINE_MODULE(ecto_test)
+ECTO_DEFINE_MODULE(ecto_simple)
 { }
 
-ECTO_CELL(ecto_test, ecto_test::Test, "Test", "Prints 'Hello' to standard output.")
+ECTO_CELL(ecto_simple, ecto_simple::Test, "Test", "Prints 'Hello' to standard output.")
